@@ -1,0 +1,17 @@
+.DS_Store
+
+/assets/*
+/dist/*
+/photo/*
+
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+!application/*/.htaccess
+
+!application/config/*
+/application/config/config.php
+/application/config/database.php
