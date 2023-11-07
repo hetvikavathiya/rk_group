@@ -6,10 +6,7 @@
                     <div class="col-md-12 text-center">
                         <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">
                             <?= $slider[$x]['title']; ?></h1>
-                        <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Quod, <br> veritatis tempore nostrum id
-                            officia quaerat eum corrupti, <br> ipsa aliquam velit.</p>
-                        <a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main" href="service.html">Explore Us</a>
+
                     </div>
                 </div>
             </div>
@@ -71,6 +68,108 @@
         </div> <!-- end row -->
     </div> <!-- end container -->
 </section> <!-- End section -->
+
+<!-- Start Services Section
+==================================== -->
+
+<section class="services" id="services">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- section title -->
+            <div class="col-xl-6 col-lg-8">
+                <div class="title text-center">
+                    <h2>Our Services</h2>
+                    <p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum iaculis ex,
+                        in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
+                    <div class="border"></div>
+                </div>
+            </div>
+            <!-- /section title -->
+        </div>
+        <div class="row no-gutters">
+
+            <!-- Single Service Item -->
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="service-block p-4 color-bg text-center">
+                    <div class="service-icon text-center">
+                        <i class="tf-ion-ios-copy-outline"></i>
+                    </div>
+                    <h3>WordPress Theme</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
+                        iaculis arcu at mauris dapibus consectetur.</p>
+                </div>
+            </div>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="service-block p-4 text-center">
+                    <div class="service-icon text-center">
+                        <i class="tf-ion-ios-alarm-outline"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
+                        iaculis arcu at mauris dapibus consectetur.</p>
+                </div>
+            </div>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="service-block p-4 color-bg text-center">
+                    <div class="service-icon text-center">
+                        <i class="tf-ion-ios-book-outline"></i>
+                    </div>
+                    <h3>Media &amp; Advertisement</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
+                        iaculis arcu at mauris dapibus consectetur.</p>
+                </div>
+            </div>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="service-block p-4  text-center">
+                    <div class="service-icon text-center">
+                        <i class="tf-ion-ios-briefcase-outline"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
+                        iaculis arcu at mauris dapibus consectetur.</p>
+                </div>
+            </div>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="service-block p-4 color-bg text-center">
+                    <div class="service-icon text-center">
+                        <i class="tf-ion-ios-crop"></i>
+                    </div>
+                    <h3>Apps Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
+                        iaculis arcu at mauris dapibus consectetur.</p>
+                </div>
+            </div>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="service-block p-4 text-center">
+                    <div class="service-icon text-center">
+                        <i class="tf-ion-ios-home-outline"></i>
+                    </div>
+                    <h3>Networking</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
+                        iaculis arcu at mauris dapibus consectetur.</p>
+                </div>
+            </div>
+            <!-- End Single Service Item -->
+
+        </div> <!-- End row -->
+    </div> <!-- End container -->
+</section> <!-- End section -->
+
 
 <!-- Start Our Team
 		=========================================== -->
@@ -164,10 +263,7 @@
                         <i class="tf-ion-android-phone-portrait"></i>
                         <span>Phone:<?php echo $contact['number']; ?></span>
                     </li>
-                    <li class="mb-3">
-                        <i class="tf-ion-android-globe"></i>
-                        <span>Fax: +880-31-000-000</span>
-                    </li>
+
                     <li>
                         <i class="tf-ion-android-mail"></i>
                         <span>Email:<?php echo $contact['email']; ?></span>
@@ -194,7 +290,7 @@
                     </div>
 
                     <div class="form-group mb-4">
-                        <input type="text" placeholder="Your Email" class="form-control" name="email" id="email" required>
+                        <input type="text" placeholder="Your mobile no" class="form-control" name="mobile_no" id="mobile_no" required>
                     </div>
 
                     <div class="form-group mb-4">

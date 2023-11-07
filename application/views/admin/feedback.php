@@ -13,7 +13,7 @@
                                     <th scope="col">action</th>
                                     <th scope="col">Sl No</th>
                                     <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
+                                    <th scope="col">Mobile No</th>
                                     <th scope="col">Feedback</th>
                                     <th scope="col">Created at</th>
                                 </tr>
@@ -50,7 +50,7 @@
                     data: 'name'
                 },
                 {
-                    data: 'email'
+                    data: 'mobile_no'
                 },
                 {
                     data: 'feedback'

@@ -19,7 +19,7 @@ class Contact extends CI_Controller
     public function add()
     {
         $this->form_validation->set_rules('name', 'name', 'required');
-        $this->form_validation->set_rules('email', 'email', 'required');
+        $this->form_validation->set_rules('mobile_no', 'mobile_no', 'required');
         $this->form_validation->set_rules('feedback', 'feedback', 'required');
 
         if ($this->form_validation->run() == false) {
@@ -29,7 +29,7 @@ class Contact extends CI_Controller
         } else {
             $data = array();
             $data['name'] = $this->security->xss_clean($this->input->post('name'));
-            $data['email'] = $this->security->xss_clean($this->input->post('email'));
+            $data['mobile_no'] = $this->security->xss_clean($this->input->post('mobile_no'));
             $data['feedback'] = $this->security->xss_clean($this->input->post('feedback'));
 
             $this->db->insert('feedback', $data);

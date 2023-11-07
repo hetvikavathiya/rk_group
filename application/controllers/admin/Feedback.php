@@ -101,7 +101,7 @@ class Feedback extends CI_Controller
                 'action' => $action,
                 'id' => $i,
                 'name' => $record['name'],
-                'email' => $record['email'],
+                'mobile_no' => $record['mobile_no'],
                 'feedback' => $record['feedback'],
                 'created_at' => $record['created_at'],
             );

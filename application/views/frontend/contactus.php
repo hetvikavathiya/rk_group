@@ -35,10 +35,6 @@ $this->load->view('frontend/slider');
                         <i class="tf-ion-android-phone-portrait"></i>
                         <span>Phone:<?php echo $data['number']; ?></span>
                     </li>
-                    <li class="mb-3">
-                        <i class="tf-ion-android-globe"></i>
-                        <span>Fax: +880-31-000-000</span>
-                    </li>
                     <li>
                         <i class="tf-ion-android-mail"></i>
                         <span>Email:<?php echo $data['email']; ?></span>
@@ -65,7 +61,7 @@ $this->load->view('frontend/slider');
                     </div>
 
                     <div class="form-group mb-4">
-                        <input type="text" placeholder="Your Email" class="form-control" name="email" id="email" required>
+                        <input type="text" placeholder="Your mobile no" class="form-control" name="mobile_no" id="mobile_no" required>
                     </div>
 
                     <div class="form-group mb-4">

@@ -80,35 +80,19 @@
               <a class="nav-link" href="<?= base_url('product'); ?>">Product</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="<?= base_url('services'); ?>">Services</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="<?= base_url('team'); ?>">Team</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item ">
               <a class="nav-link" href="<?= base_url('contact'); ?>">Contact</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pages <i class="tf-ion-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
-                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                <li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
-                <li><a class="dropdown-item" href="single-post.html">Blog Single Page</a></li>
-
-                <li class="dropdown dropdown-submenu dropleft">
-                  <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu <i class="tf-ion-chevron-down"></i></a>
-
-                  <ul class="dropdown-menu" aria-labelledby="dropdown0201">
-                    <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                    <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-                  </ul>
-                </li>
-              </ul>
+            <li class="nav-item ">
+              <a class="nav-link " href="<?= base_url('login/register'); ?>"><button class="btn btn-sm btn-primary">Registration</button></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="<?= base_url('login'); ?>"><button class="btn btn-sm btn-primary">Login</button></a>
             </li>
           </ul>
         </div>
@@ -116,21 +100,6 @@
       <!-- /main nav -->
     </div>
   </header>
-
-  <!-- <section class="single-page-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2><?= $page_title ?></h2>
-          <ol class="breadcrumb header-bradcrumb justify-content-center">
-            <li class="breadcrumb-item"><a href="<?= base_url('home'); ?>" class="text-white">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><?= $page_title ?></li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
 
   <?php
   $this->load->view($page_name);

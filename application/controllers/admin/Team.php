@@ -23,7 +23,7 @@ class Team extends CI_Controller
     public function add()
     {
         $this->form_validation->set_rules('name', 'name', 'trim|required');
-        $this->form_validation->set_rules('destination', 'destination', 'trim|required');
+        $this->form_validation->set_rules('designation', 'designation', 'trim|required');
 
         if ($this->form_validation->run() == FALSE) {
             $message = ['class' => 'danger', 'message' => validation_errors()];
@@ -33,7 +33,7 @@ class Team extends CI_Controller
             $post = $this->input->post();
             $data = array();
             $data['name'] = $this->security->xss_clean($this->input->post('name'));
-            $data['destination'] = $this->security->xss_clean($this->input->post('destination'));
+            $data['designation'] = $this->security->xss_clean($this->input->post('designation'));
 
             if (!empty($_FILES['image']['name'])) {
 
@@ -70,12 +70,12 @@ class Team extends CI_Controller
         $page_data['data'] = $this->db->get('team')->result_array();
         $this->load->view('admin/common', $page_data);
     }
-    public function update($param = "update")
+    public function update()
     {
 
         $id = $this->input->post('id');
         $this->form_validation->set_rules('name', 'name', 'trim|required');
-        $this->form_validation->set_rules('destination', 'destination', 'trim|required');
+        $this->form_validation->set_rules('designation', 'designation', 'trim|required');
 
 
         if ($this->form_validation->run() == false) {
@@ -86,7 +86,7 @@ class Team extends CI_Controller
 
             $data = array();
             $data['name'] =  $this->security->xss_clean($this->input->post('name'));
-            $data['destination'] =  $this->security->xss_clean($this->input->post('destination'));
+            $data['designation'] =  $this->security->xss_clean($this->input->post('designation'));
 
             if (!empty($_FILES['image']['name'])) {
                 $row_data  =  $this->db->get_where('team', array('id' => $id))->row('image');
@@ -119,7 +119,7 @@ class Team extends CI_Controller
     }
 
 
-    public function delete($param = "edit")
+    public function delete()
     {
         $id =  $this->input->post('id');
         $query = $this->db->get_where('team', ['id' => $id]);
@@ -208,7 +208,7 @@ class Team extends CI_Controller
                 'id' => $i,
                 'image' => $image,
                 'name' => $record['name'],
-                'destination' => $record['destination'],
+                'designation' => $record['designation'],
                 'created_at' => $record['created_at'],
             );
             $i++;

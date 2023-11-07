@@ -35,11 +35,11 @@
 
                         <div class="col-lg-4">
                             <div class="form-group">
-                                <label for="input-1">Destination<span class="text-danger">*</span></label>
+                                <label for="input-1">Designation<span class="text-danger">*</span></label>
 
                                 <input type="text" class="form-control" id="input-1" value="<?php if (!empty($update_data)) {
-                                                                                                echo $update_data['destination'];
-                                                                                            } ?>" name="destination" placeholder="Enter team member  destination" required>
+                                                                                                echo $update_data['designation'];
+                                                                                            } ?>" name="designation" placeholder="Enter team member  designation" required>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                     <th scope="col">Sl No</th>
                                     <th scope="col">Image</th>
                                     <th scope="col">Name</th>
-                                    <th scope="col">Destination</th>
+                                    <th scope="col">Designation</th>
                                     <th scope="col">Created at</th>
                                 </tr>
                             </thead>
@@ -107,7 +107,7 @@
                     data: 'name'
                 },
                 {
-                    data: 'destination'
+                    data: 'designation'
                 },
                 {
                     data: 'created_at'
