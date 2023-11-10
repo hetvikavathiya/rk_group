@@ -266,8 +266,7 @@
             <div class="col-xl-6 col-lg-8">
                 <div class="title text-center">
                     <h2>Contact Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate facilis eveniet maiores ab maxime nam
-                        ut numquam molestiae quaerat incidunt?</p>
+                    <p>Contact us for Furniture, Electronics Accessories, Pop Fall Ceiling, Fabrication and Interior Designs,Plumbing and Paint creator.</p>
                     <div class="border"></div>
                 </div>
             </div>
