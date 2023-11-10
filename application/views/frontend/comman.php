@@ -39,6 +39,9 @@
   <link rel="stylesheet" href="<?= base_url('assets/frontend/'); ?>plugins/slick/slick.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="<?= base_url('assets/frontend/'); ?>css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 </head>
 <div id="preloader">
   <div class='preloader'>
@@ -59,9 +62,8 @@
       <!-- main nav -->
       <nav class="navbar navbar-expand-lg navbar-light px-0">
         <!-- logo -->
-        <a class="navbar-brand logo" href="index.html">
-          <img loading="lazy" class="logo-default" src="assets/frontend/images/logo.png" alt="logo" />
-          <img loading="lazy" class="logo-white" src="assets/frontend/images/logo-white.png" alt="logo" />
+        <a class="navbar-brand logo" href="<?= base_url('home');  ?>">
+          <img src="<?= base_url(); ?>assets/images/logo-icon.png" width="200px" alt="logo icon">
         </a>
         <!-- /logo -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,6 +132,8 @@
 
   <!-- Custom js -->
   <script src="<?= base_url('assets/frontend/'); ?>js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 <footer id="footer" class="bg-one">
@@ -138,7 +142,7 @@
       <div class="row justify-content-around">
         <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
           <h3>about</h3>
-          <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere.</p>
+          <p>Designer Furniture, All types Electronics, All types Electrical, All types plumbing, All types of Pop fall ceiling, All types paints creators, All types Fabrication and interior designs provider’s and many more.</p>
         </div>
         <!-- End of .col-sm-3 -->
 
@@ -147,10 +151,12 @@
             <li>
               <h3>Our Services</h3>
             </li>
-            <li><a href="service.html">Ui/Ux Design</a></li>
-            <li><a href="service.html">Graphic Design</a></li>
-            <li><a href="service.html">Web Design</a></li>
-            <li><a href="service.html">Web Development</a></li>
+            <li><a href="<?= base_url('services'); ?>">Furniture Designer</a></li>
+            <li><a href="<?= base_url('services'); ?>">Electronics</a></li>
+            <li><a href="<?= base_url('services'); ?>">Plumbing</a></li>
+            <li><a href="<?= base_url('services'); ?>">Fabrication and Interior Designs</a></li>
+            <li><a href="<?= base_url('services'); ?>">Pop Fall Ceiling</a></li>
+            <li><a href="<?= base_url('services'); ?>">Paints Creators</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
@@ -160,10 +166,12 @@
             <li>
               <h3>Quick Links</h3>
             </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="blog.html">Blogs</a></li>
-            <li><a href="404.html">404</a></li>
+            <li><a href="<?= base_url('home'); ?>">Home</a></li>
+            <li><a href="<?= base_url('about'); ?>">About</a></li>
+            <li><a href="<?= base_url('product'); ?>">Product</a></li>
+            <li><a href="<?= base_url('services'); ?>">Services</a></li>
+            <li><a href="<?= base_url('team'); ?>">Team</a></li>
+            <li><a href="<?= base_url('contact'); ?>">Contact</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
@@ -173,10 +181,8 @@
             <li>
               <h3>Connect with us Socially</h3>
             </li>
-            <li><a href="https://www.facebook.com/themefisher/">Facebook</a></li>
-            <li><a href="https://www.twitter.com/themefisher/">Twitter</a></li>
-            <li><a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA">Youtube</a></li>
-            <li><a href="https://www.github.com/themefisher/">Github</a></li>
+            <li><a href="https://www.instagram.com/r_k_group_rushanelectronic">Instagram</a></li>
+            <li><a href="https://www.instagram.com/Rehankhanwin1">Instagram</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
@@ -185,8 +191,8 @@
     </div> <!-- end container -->
   </div>
   <div class="footer-bottom">
-    <h5>&copy; Copyright 2020. All rights reserved.</h5>
-    <h6>Design and Developed by <a href="https://themefisher.com/">Themefisher</a></h6>
+    <h5>&copy; Copyright 2023. All rights reserved.</h5>
+    <h6>Design and Developed by <a href="https://ragingdevelopers.com" target="_blank">Raging Devlopers</a></h6>
   </div>
 </footer> <!-- end footer -->
 

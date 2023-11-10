@@ -23,9 +23,6 @@ $this->load->view('frontend/slider');
             <!-- Contact Details -->
             <div class="contact-details col-md-6 ">
                 <h3 class="mb-3">Contact Details</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex
-                    explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
-                    adipisci.</p>
                 <ul class="contact-short-info mt-4">
                     <li class="mb-3">
                         <i class="tf-ion-ios-home"></i>
@@ -37,16 +34,14 @@ $this->load->view('frontend/slider');
                     </li>
                     <li>
                         <i class="tf-ion-android-mail"></i>
-                        <span>Email:<?php echo $data['email']; ?></span>
+                        <span>Email:<a href="mailto:<?php echo $data['email']; ?>" class="text-dark"><?php echo $data['email']; ?></a></span>
                     </li>
                 </ul>
                 <!-- Footer Social Links -->
                 <div class="social-icon">
                     <ul>
-                        <li><a href="https://themefisher.com/"><i class="tf-ion-social-facebook"></i></a></li>
-                        <li><a href="https://themefisher.com/"><i class="tf-ion-social-twitter"></i></a></li>
-                        <li><a href="https://themefisher.com/"><i class="tf-ion-social-dribbble-outline"></i></a></li>
-                        <li><a href="https://themefisher.com/"><i class="tf-ion-social-linkedin-outline"></i></a></li>
+                        <li><a href="https://www.instagram.com/Rehankhanwin1" target="_blank"><i class="tf-ion-social-instagram"></i></a></li>
+                        <li><a href="https://www.instagram.com/r_k_group_rushanelectronic" target="_blank"><i class="tf-ion-social-instagram"></i></a></li>
                     </ul>
                 </div>
                 <!--/. End Footer Social Links -->

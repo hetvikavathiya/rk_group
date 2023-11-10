@@ -10,8 +10,6 @@ $this->load->view('frontend/slider');
             <div class="col-xl-6 col-lg-8">
                 <div class="title text-center ">
                     <h2>Our Team</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quasi tempora obcaecati, quis
-                        similique quos.</p>
                     <div class="border"></div>
                 </div>
             </div>
@@ -26,26 +24,14 @@ $this->load->view('frontend/slider');
                     <div class="team-member text-center">
                         <div class="member-photo">
                             <!-- member photo -->
-                            <img loading="lazy" class="img-fluid" src="<?= base_url() ?>upload/team/<?= $team[$x]['image']; ?>" alt="Meghna">
+                            <img loading="lazy" class="img-fluid" src="<?= base_url() ?>upload/team/<?= $team[$x]['image']; ?>" alt="Meghna" style="height:300px; width:350px;">
                             <!-- /member photo -->
-
-                            <!-- member social profile -->
-                            <div class="mask">
-                                <ul class="clearfix">
-                                    <li><a href="https://themefisher.com/"><i class="tf-ion-social-facebook"></i></a></li>
-                                    <li><a href="https://themefisher.com/"><i class="tf-ion-social-twitter"></i></a></li>
-                                    <li><a href="https://themefisher.com/"><i class="tf-ion-social-google-outline"></i></a></li>
-                                    <li><a href="https://themefisher.com/"><i class="tf-ion-social-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- /member social profile -->
                         </div>
 
                         <!-- member name & designation -->
                         <div class="member-content">
                             <h3><?= $team[$x]['name']; ?></h3>
-                            <span><?= $team[$x]['destination']; ?></span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                            <span><?= $team[$x]['designation']; ?></span>
                         </div>
                         <!-- /member name & designation -->
 

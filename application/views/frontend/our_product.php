@@ -8,8 +8,7 @@ $this->load->view('frontend/slider');
                 <!-- section title -->
                 <div class="title text-center">
                     <h2>Our Product</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, veritatis. Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Minima, vitae? </p>
+                    <p>Designer Furniture, All types Electronics, All types Electrical, All types plumbing, All types of Pop fall ceiling, All types paints creators, All types Fabrication and interior designs provider’s and many more </p>
                     <div class="border"></div>
                 </div>
                 <!-- /section title -->
