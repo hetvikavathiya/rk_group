@@ -26,13 +26,11 @@ class Loan extends CI_Controller
 
 	public function profile($param = '')
 	{
-		$this->db->select('customer.*');
+		$this->db->select('customer.*,account_type.name');
 		$this->db->from('customer');
-		// $this->db->select('customer.*,account_type.name');
-		// $this->db->from('customer');
-		// $this->db->join('account_type', 'account_type.id = customer.acc_type_id', 'left');
+		$this->db->join('account_type', 'account_type.id = customer.acc_type_id', 'left');
 
-		$this->db->where('id', $param);
+		$this->db->where('customer.id', $param);
 		$page_data['row_data'] = $this->db->get()->row_array();
 		$page_data['customer_id'] = $param;
 

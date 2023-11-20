@@ -91,7 +91,7 @@
  							</div>
  							<div class="icon-block text-center">
  								Account Type : <?php if (!empty($row_data)) {
-													echo $row_data['acc_type_id'];
+													echo $row_data['name'];
 												} ?>
  							</div>
 
