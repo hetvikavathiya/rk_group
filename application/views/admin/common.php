@@ -8,6 +8,7 @@
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 	<title><?= $page_title; ?> | RK GROUP</title>
+	<link rel="icon" href="<?= base_url('assets/images/logo-icon.jpeg')  ?>" type="image/icon type">
 	<!-- loader-->
 	<link href="<?= base_url(); ?>assets/css/pace.min.css" rel="stylesheet" />
 	<script src="<?= base_url(); ?>assets/js/pace.min.js"></script>
@@ -73,7 +74,7 @@
 		<div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
 			<div class="brand-logo">
 				<a href="<?= base_url('admin/dashboard'); ?>">
-					<img src="<?= base_url(); ?>assets/images/logo-icon.png" class="logo-icon" alt="logo icon"><br>
+					<img src="<?= base_url(); ?>assets/images/logo-icon.jpeg" class="logo-icon" alt="logo icon"><br>
 					<h5 class="logo-text">C.E.O - Rehan Khan</h5>
 				</a>
 			</div>
@@ -151,8 +152,11 @@
 						<a href="<?= base_url('admin/team'); ?>">
 							<i class="zmdi zmdi-accounts-outline"></i> <span> Our Team</span>
 						</a><br>
+						<a href="<?= base_url('admin/inquiry'); ?>">
+							<i class="zmdi zmdi-format-align-justify"></i> <span>Inquiry</span>
+						</a><br>
 						<a href="<?= base_url('admin/feedback'); ?>">
-							<i class="zmdi zmdi-format-align-justify"></i> <span>Feedback</span>
+							<i class="zmdi zmdi-comment-text-alt"></i> <span>Feedback</span>
 						</a><br>
 						<a href="<?= base_url('admin/contact/edit/1'); ?>">
 							<i class="zmdi zmdi-phone"></i> <span>Contact</span>

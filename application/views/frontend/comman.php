@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
 <title>
-  <?= $page_title; ?>
+  <?= $page_title; ?> | RK-GROUP FINANCE
+
 </title>
+<link rel="icon" href="<?= base_url('assets/images/logo-icon.jpeg')  ?>" type="image/icon type">
 
 <html lang="en">
 
@@ -63,7 +65,7 @@
       <nav class="navbar navbar-expand-lg navbar-light px-0">
         <!-- logo -->
         <a class="navbar-brand logo" href="<?= base_url('home');  ?>">
-          <img src="<?= base_url(); ?>assets/images/logo-icon.png" width="200px" alt="logo icon">
+          <img src="<?= base_url(); ?>assets/images/logo-icon.jpeg" width="200px" alt="logo icon">
         </a>
         <!-- /logo -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -181,8 +183,8 @@
             <li>
               <h3>Connect with us Socially</h3>
             </li>
-            <li><a href="https://www.instagram.com/r_k_group_rushanelectronic">Instagram</a></li>
-            <li><a href="https://www.instagram.com/Rehankhanwin1">Instagram</a></li>
+            <li><a href="https://www.instagram.com/r_k_group_rushanelectronic">Instagram-r_k_group_rushanelectronic</a></li>
+            <li><a href="https://www.instagram.com/Rehankhanwin1">Instagram - Rehankhanwin1</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->

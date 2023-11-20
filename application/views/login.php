@@ -8,6 +8,8 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>Log In | RK GROUP</title>
+  <link rel="icon" href="<?= base_url('assets/images/logo-icon.jpeg')  ?>" type="image/icon type">
+
   <!-- loader-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="<?= base_url(); ?>assets/css/pace.min.css" rel="stylesheet" />
@@ -57,7 +59,7 @@
       <div class="card-body">
         <div class="card-content p-2">
           <div class="text-center">
-            <img src="<?= base_url(); ?>assets/images/logo-icon.png" width="300px" alt="logo icon">
+            <img src="<?= base_url(); ?>assets/images/logo-icon.jpeg" width="300px" alt="logo icon">
           </div>
           <div class="text-center font-weight-bold">
             RK GROUP FINANCE <br> Registration Number : GMLAHC2324000229

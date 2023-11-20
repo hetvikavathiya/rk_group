@@ -150,6 +150,7 @@ class Login extends CI_Controller
             $data['last_name'] = $this->security->xss_clean($this->input->post('last_name'));
             $data['status'] = 'Pending';
             $data['address'] = $this->security->xss_clean($this->input->post('address'));
+            $data['acc_type_id'] = $this->security->xss_clean($this->input->post('acc_type_id'));
             $data['document_type'] = $this->security->xss_clean($this->input->post('document_type'));
             $data['alternate_mobile_no'] = $this->security->xss_clean($this->input->post('a_mobile'));
             $data['city'] = $this->security->xss_clean($this->input->post('city'));
@@ -168,13 +169,13 @@ class Login extends CI_Controller
                 $this->upload->initialize($config);
                 $this->upload->do_upload('photo');
                 $data['photo'] = $file_name;
-                $newfile_name = date('Ymdhis') . $rand . 'new.' . $file_ext;
-                $destination_img = './upload/' . $newfile_name;
-                $fileName = './upload/' . $file_name;
-                $d = $this->compress($fileName, $destination_img, 50);
+                // $newfile_name = date('Ymdhis') . $rand . 'new.' . $file_ext;
+                // $destination_img = './upload/' . $newfile_name;
+                // $fileName = './upload/' . $file_name;
+                // $d = $this->compress($fileName, $destination_img, 50);
 
-                unlink($fileName);
-                $data['photo'] = $newfile_name;
+                // unlink($fileName);
+                // $data['photo'] = $newfile_name;
             }
             if (!empty($_FILES['signature']['name'])) {
                 $file_ext = pathinfo($_FILES['signature']['name'], PATHINFO_EXTENSION);
@@ -187,13 +188,13 @@ class Login extends CI_Controller
                 $this->upload->initialize($config);
                 $this->upload->do_upload('signature');
                 $data['signature'] = $file_name;
-                $newfile_name = date('Ymdhis') . $rand . 'new.' . $file_ext;
-                $destination_img = './upload/' . $newfile_name;
-                $fileName = './upload/' . $file_name;
-                $d = $this->compress($fileName, $destination_img, 50);
+                // $newfile_name = date('Ymdhis') . $rand . 'new.' . $file_ext;
+                // $destination_img = './upload/' . $newfile_name;
+                // $fileName = './upload/' . $file_name;
+                // $d = $this->compress($fileName, $destination_img, 50);
 
-                unlink($fileName);
-                $data['signature'] = $newfile_name;
+                // unlink($fileName);
+                // $data['signature'] = $newfile_name;
             }
             if (!empty($_FILES['frontside_document']['name'])) {
                 $file_ext = pathinfo($_FILES['frontside_document']['name'], PATHINFO_EXTENSION);
@@ -206,13 +207,13 @@ class Login extends CI_Controller
                 $this->upload->initialize($config);
                 $this->upload->do_upload('frontside_document');
                 $data['frontside_document'] = $file_name;
-                $newfile_name = date('Ymdhis') . $rand . 'new.' . $file_ext;
-                $destination_img = './upload/' . $newfile_name;
-                $fileName = './upload/' . $file_name;
-                $d = $this->compress($fileName, $destination_img, 50);
+                // $newfile_name = date('Ymdhis') . $rand . 'new.' . $file_ext;
+                // $destination_img = './upload/' . $newfile_name;
+                // $fileName = './upload/' . $file_name;
+                // $d = $this->compress($fileName, $destination_img, 50);
 
-                unlink($fileName);
-                $data['frontside_document'] = $newfile_name;
+                // unlink($fileName);
+                // $data['frontside_document'] = $newfile_name;
             }
             if (!empty($_FILES['backside_document']['name'])) {
                 $file_ext = pathinfo($_FILES['backside_document']['name'], PATHINFO_EXTENSION);
@@ -225,13 +226,13 @@ class Login extends CI_Controller
                 $this->upload->initialize($config);
                 $this->upload->do_upload('backside_document');
                 $data['backside_document'] = $file_name;
-                $newfile_name = date('Ymdhis') . $rand . 'new.' . $file_ext;
-                $destination_img = './upload/' . $newfile_name;
-                $fileName = './upload/' . $file_name;
-                $d = $this->compress($fileName, $destination_img, 50);
+                    // $newfile_name = date('Ymdhis') . $rand . 'new.' . $file_ext;
+                    // $destination_img = './upload/' . $newfile_name;
+                    // $fileName = './upload/' . $file_name;
+                    // $d = $this->compress($fileName, $destination_img, 50);
 
-                unlink($fileName);
-                $data['backside_document'] = $newfile_name;
+                    // unlink($fileName);
+                    // $data['backside_document'] = $newfile_name;
             }
             $this->db->select('aadhar_card');
             $this->db->from('customer');

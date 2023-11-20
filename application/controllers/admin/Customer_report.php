@@ -61,8 +61,9 @@ class Customer_report extends CI_Controller
 			$searchQuery = implode(" and ", $search_arr);
 		}
 		## Total number of records without filtering
-		$this->db->select('*');
+		$this->db->select('customer.*,account_type.name as acc_type');
 		$this->db->from('customer');
+		$this->db->join('account_type', 'account_type.id = customer.acc_type_id', 'left');
 		if ($searchQuery != '') {
 			$this->db->where($searchQuery);
 		}
@@ -78,8 +79,12 @@ class Customer_report extends CI_Controller
 		## Total number of record with filtering
 		$totalRecordwithFilter = $records;
 		## Fetch records
-		$this->db->select('*');
-		$this->db->from('customer');
+		// $this->db->select('*');
+		// $this->db->from('customer');
+			$this->db->select('customer.*,account_type.name as acc_type');
+			$this->db->from('customer');
+			$this->db->join('account_type', 'account_type.id = customer.acc_type_id', 'left');
+
 		if ($searchQuery != '') {
 			$this->db->where($searchQuery);
 		}
@@ -141,6 +146,7 @@ class Customer_report extends CI_Controller
 				'backside_document' => $r_backside_document,
 				'document_type' => $record['document_type'],
 				'status' => $record['status'],
+				'acc_type' => $record['acc_type'],
 			);
 			$i++;
 		}

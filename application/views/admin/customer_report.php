@@ -21,6 +21,7 @@
 								<th scope="col">Edit</th>
 								<th scope="col">Sl No</th>
 								<th scope="col">Name</th>
+								<th scope="col">Account type</th>
 								<th scope="col">Status</th>
 								<th scope="col">Aadhaar Card No</th>
 								<th scope="col">Mobile No</th>
@@ -66,6 +67,9 @@
 				},
 				{
 					data: 'name'
+				},
+				{
+					data: 'acc_type'
 				},
 				{
 					data: 'status'

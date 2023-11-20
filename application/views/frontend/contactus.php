@@ -59,7 +59,7 @@ $this->load->view('frontend/slider');
                     </div>
 
                     <div class="form-group mb-4">
-                        <textarea rows="6" placeholder="Message" class="form-control" name="feedback" id="message" required></textarea>
+                        <textarea rows="6" placeholder="Message" class="form-control" name="inquiry" id="message" required></textarea>
                     </div>
                     <div id="cf-submit">
                         <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">

@@ -101,7 +101,6 @@
 
                     </div>
                     <h3>Furniture Designs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur..</p>
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -120,8 +119,6 @@
                         </svg>
                     </div>
                     <h3>Electronics</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -141,8 +138,6 @@
 
                     </div>
                     <h3>Plumbing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -161,8 +156,7 @@
                         </svg>
                     </div>
                     <h3>Fabrication and Interior Designs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
+
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -181,8 +175,6 @@
                         </svg>
                     </div>
                     <h3>Pop Fall Ceiling</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -201,8 +193,6 @@
                         </svg>
                     </div>
                     <h3>Paints Creators</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -256,7 +246,46 @@
     </div> <!-- End container -->
 </section> <!-- End section -->
 
+<!-- Start Testimonial
+=========================================== -->
 
+<section class="testimonial section" id="testimonial">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <?php
+                for ($x = 0; $x < count($feedback); $x++) { ?>
+                    <!-- testimonial wrapper -->
+                    <div class="testimonial-slider">
+                        <!-- testimonial single -->
+                        <div class="item text-center">
+                            <i class="tf-ion-chatbubbles"></i>
+                            <!-- client info -->
+                            <div class="client-details">
+                                <p><?= $feedback[$x]['feedback']; ?>
+                                </p>
+                            </div>
+                            <!-- /client info -->
+                            <!-- client photo -->
+                            <div class="client-thumb">
+                                <img loading="lazy" src="<?= base_url() ?>upload/feedback/<?= $feedback[$x]['image']; ?>" class="img-fluid" alt="">
+                            </div>
+                            <div class="client-meta">
+                                <h3>William Martin</h3>
+                                <span><?= $feedback[$x]['company_name']; ?></span>
+                            </div>
+                            <!-- /client photo -->
+                        </div>
+                        <!-- /testimonial single -->
+
+                    <?php }
+                    ?>
+                    </div> <!-- end col lg 12 -->
+
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+</section> <!-- End Section -->
 <!--Start Contact Us
 	=========================================== -->
 <section class="contact-us" id="contact">
@@ -314,7 +343,7 @@
                     </div>
 
                     <div class="form-group mb-4">
-                        <textarea rows="6" placeholder="Message" class="form-control" name="feedback" id="message" required></textarea>
+                        <textarea rows="6" placeholder="Message" class="form-control" name="inquiry" id="inquiry" required></textarea>
                     </div>
                     <div id="cf-submit">
                         <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">

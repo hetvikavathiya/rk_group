@@ -32,8 +32,6 @@ $this->load->view('frontend/slider');
                         </svg>
                     </div>
                     <h3>Furniture Designs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -52,8 +50,6 @@ $this->load->view('frontend/slider');
                         </svg>
                     </div>
                     <h3>Electronics</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -72,8 +68,7 @@ $this->load->view('frontend/slider');
                         </svg>
                     </div>
                     <h3>Plumbing </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
+
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -92,8 +87,6 @@ $this->load->view('frontend/slider');
                         </svg>
                     </div>
                     <h3>Fabrication and Interior Designs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -105,8 +98,6 @@ $this->load->view('frontend/slider');
                         <i class="tf-ion-ios-crop"></i>
                     </div>
                     <h3>Pop Fall Ceiling</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
                 </div>
             </div>
             <!-- End Single Service Item -->
@@ -118,8 +109,6 @@ $this->load->view('frontend/slider');
                         <i class="tf-ion-ios-home-outline"></i>
                     </div>
                     <h3>Paints Creators</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-                        iaculis arcu at mauris dapibus consectetur.</p>
                 </div>
             </div>
             <!-- End Single Service Item -->

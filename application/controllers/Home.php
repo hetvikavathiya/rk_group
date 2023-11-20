@@ -20,6 +20,7 @@ class Home extends CI_Controller
         $page_data['product'] = $result;
         $page_data['category'] = $this->db->get('category')->result_array();
         $page_data['team'] = $this->db->get('team')->result_array();
+        $page_data['inquiry'] = $this->db->get('inquiry')->result_array();
         $page_data['feedback'] = $this->db->get('feedback')->result_array();
         $page_data['contact'] = $this->db->get('contact')->row_array();
         $this->load->view('frontend/comman', $page_data);

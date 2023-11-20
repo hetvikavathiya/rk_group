@@ -1,19 +1,74 @@
 <div class="row mt-3">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">Feedback <?php if (!empty($update_data)) {
+                                                        echo 'Edit';
+                                                    } ?></div>
+                <hr>
+
+                <form method="post" action="<?php if (!empty($update_data)) {
+                                                echo base_url('admin/feedback/update');
+                                            } else {
+                                                echo base_url('admin/feedback/add');
+                                            } ?>" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="<?php if (isset($update_data)) {
+                                                                echo $update_data['id'];
+                                                            } ?>">
+                    <div class="row">
+                        <div class=" col-lg-3">
+                            <div class="form-group">
+                                <label for="input-1">Name<span class="text-danger">*</span></label>
+
+                                <input type="text" class="form-control" id="input-1" value="<?php if (!empty($update_data)) {
+                                                                                                echo $update_data['name'];
+                                                                                            } ?>" name="name" placeholder="Enter  name" required>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="image">Image<span class="text-danger">*</span></label>
+                                <input type="file" name="image" class="form-control" id="image" <?php if (!isset($update_data)) echo 'required' ?>>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="input-1">Feedback<span class="text-danger">*</span></label>
+
+                                <textarea type="text" class="form-control" id="input-1" value="<?php if (!empty($update_data)) {
+                                                                                                    echo $update_data['feedback'];
+                                                                                                } ?>" name="feedback" placeholder="Enter  feedback   " required>
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="submit" value="<?= isset($update_data) ? "UPDATE" : "ADD" ?> FEEDBACK">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <div class="row mt-3">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <div class="card-title">Feedback Report</div>
+                    <div class="card-title">Feedback</div>
                     <div class="table-responsive">
                         <table class="table table-hover datatable" id="example1">
                             <thead>
                                 <tr>
-                                    <th scope="col">action</th>
+                                    <th scope="col">Edit</th>
                                     <th scope="col">Sl No</th>
                                     <th scope="col">Name</th>
-                                    <th scope="col">Mobile No</th>
+                                    <th scope="col">Image</th>
                                     <th scope="col">Feedback</th>
                                     <th scope="col">Created at</th>
                                 </tr>
@@ -24,6 +79,8 @@
             </div>
         </div>
     </div>
+
+
 </div>
 <script type="text/javascript">
     $(document).ready(function() {
@@ -50,7 +107,7 @@
                     data: 'name'
                 },
                 {
-                    data: 'mobile_no'
+                    data: 'image'
                 },
                 {
                     data: 'feedback'

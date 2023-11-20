@@ -19,8 +19,8 @@ class Contact extends CI_Controller
     public function add()
     {
         $this->form_validation->set_rules('name', 'name', 'required');
-        $this->form_validation->set_rules('mobile_no', 'mobile_no', 'required');
-        $this->form_validation->set_rules('feedback', 'feedback', 'required');
+        $this->form_validation->set_rules('mobile_no', 'mobile_no', 'required|min_length[10]|max_length[10]');
+        $this->form_validation->set_rules('inquiry', 'inquiry', 'required');
 
         if ($this->form_validation->run() == false) {
             $message = array('message' => validation_errors(), 'class' => 'error');
@@ -30,9 +30,9 @@ class Contact extends CI_Controller
             $data = array();
             $data['name'] = $this->security->xss_clean($this->input->post('name'));
             $data['mobile_no'] = $this->security->xss_clean($this->input->post('mobile_no'));
-            $data['feedback'] = $this->security->xss_clean($this->input->post('feedback'));
+            $data['inquiry'] = $this->security->xss_clean($this->input->post('inquiry'));
 
-            $this->db->insert('feedback', $data);
+            $this->db->insert('inquiry', $data);
 
             redirect(base_url('home'), 'refresh');
         }

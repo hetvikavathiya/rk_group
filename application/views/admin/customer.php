@@ -101,6 +101,21 @@
                                                             } ?>" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" pattern=".{10,}" minlength="10" maxlength="10" name="a_mobile" class="form-control" id="input-23" placeholder="Your Alternate Mobile No">
                             </div>
                         </div>
+
+                        <div class="col-lg-4">
+                            <label for="select121">Account type<span class="text-danger">*</span></label>
+                            <select class="form-select" name="acc_type_id" id="acc_type_id">
+                                <option>Select account type</option>
+                                <?php
+                                $account_type = $this->db->get('account_type')->result();
+                                foreach ($account_type as $value) {
+                                ?>
+                                    <option value="<?= $value->id; ?>" <?php if (isset($row_data) && $value->id == $row_data['acc_type_id']) {
+                                                                            echo 'selected';
+                                                                        } ?>><?= $value->name; ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
                         <div class="col-lg-4">
                             <label for="select">Document Type</label>
                             <select class="form-select" id="select" name="document_type" aria-label="Default select example">
