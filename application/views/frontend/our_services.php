@@ -46,7 +46,7 @@ $this->load->view('frontend/slider');
                                     fill: #28ABE3
                                 }
                             </style>
-                            <path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM288 160c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H352v48c0 8.8-7.2 16-16 16H304c-8.8 0-16-7.2-16-16V272H240c-8.8 0-16-7.2-16-16V224c0-8.8 7.2-16 16-16h48V160z" />
+                            <path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z" />
                         </svg>
                     </div>
                     <h3>Electronics</h3>
@@ -95,7 +95,14 @@ $this->load->view('frontend/slider');
             <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                 <div class="service-block p-4 color-bg text-center">
                     <div class="service-icon text-center">
-                        <i class="tf-ion-ios-crop"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="5em" class="Ceiling" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                .Ceiling {
+                                    fill: #ffffff
+                                }
+                            </style>
+                            <path d="M128 32c0-17.7-14.3-32-32-32S64 14.3 64 32V64H32C14.3 64 0 78.3 0 96s14.3 32 32 32H64V384c0 35.3 28.7 64 64 64H352V384H128V32zM384 480c0 17.7 14.3 32 32 32s32-14.3 32-32V448h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H448l0-256c0-35.3-28.7-64-64-64L160 64v64l224 0 0 352z" />
+                        </svg>
                     </div>
                     <h3>Pop Fall Ceiling</h3>
                 </div>
@@ -106,7 +113,14 @@ $this->load->view('frontend/slider');
             <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                 <div class="service-block p-4 text-center">
                     <div class="service-icon text-center">
-                        <i class="tf-ion-ios-home-outline"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="5em" class="Creators" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                .Creators {
+                                    fill: #28ABE3
+                                }
+                            </style>
+                            <path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z" />
+                        </svg>
                     </div>
                     <h3>Paints Creators</h3>
                 </div>
