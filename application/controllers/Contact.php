@@ -18,6 +18,8 @@ class Contact extends CI_Controller
 
     public function add()
     {
+        $id = $this->security->xss_clean($this->input->post('id'));
+
         $this->form_validation->set_rules('name', 'name', 'required');
         $this->form_validation->set_rules('mobile_no', 'mobile_no', 'required|min_length[10]|max_length[10]');
         $this->form_validation->set_rules('inquiry', 'inquiry', 'required');
@@ -33,7 +35,9 @@ class Contact extends CI_Controller
             $data['inquiry'] = $this->security->xss_clean($this->input->post('inquiry'));
 
             $this->db->insert('inquiry', $data);
-
+            $insert_id = $this->db->insert_id();
+            $this->load->model('send_mail');
+            $this->send_mail->inquiry($insert_id, $id);
             redirect(base_url('home'), 'refresh');
         }
     }
