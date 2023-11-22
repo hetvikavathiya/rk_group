@@ -45,20 +45,21 @@
                     <div class="col-12">
                         <div class="filtr-container">
                             <div class="row">
-                                <?php for ($x = 0; $x < count($product); $x++) { ?>
-                                    <div class="col-md-3 col-sm-6 col-xs-6 filtr-item" data-category="<?= $product[$x]['category']; ?>">
-                                        <div class="portfolio-block">
-                                            <img class="img-fluid" src="<?= base_url() ?>upload/product/<?= $product[$x]['image']; ?>" alt="product" style="height:300px; width:350px;">
-                                            <div class="caption">
-                                                <a class="search-icon" href="<?= base_url() ?>upload/product/<?= $product[$x]['image']; ?>" data-lightbox="image-1">
-                                                    <i class="tf-ion-ios-search-strong"></i>
-                                                </a>
-                                                <h4><a href="<?= base_url('product'); ?>"><?= $product[$x]['name']; ?></a></h4>
+                                <?php foreach ($product as $category_id => $products) : ?>
+                                    <?php foreach ($products as $product) : ?>
+                                        <div class="col-md-3 col-sm-6 col-xs-6 filtr-item" data-category="<?= $product['category_name']; ?>">
+                                            <div class="portfolio-block">
+                                                <img class="img-fluid" src="<?= base_url() ?>upload/product/<?= $product['image']; ?>" alt="product" style="height:300px; width:350px;" loading="lazy">
+                                                <div class="caption">
+                                                    <a class="search-icon" href="<?= base_url() ?>upload/product/<?= $product['image']; ?>" data-lightbox="image-1">
+                                                        <i class="tf-ion-ios-search-strong"></i>
+                                                    </a>
+                                                    <h4><a href="<?= base_url('product'); ?>"><?= $product['name']; ?></a></h4>
+                                                </div>
                                             </div>
                                         </div>
-
-                                    </div>
-                                <?php } ?>
+                                    <?php endforeach; ?>
+                                <?php endforeach; ?>
                             </div>
                         </div>
                     </div>
