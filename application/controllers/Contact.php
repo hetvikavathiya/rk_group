@@ -38,6 +38,8 @@ class Contact extends CI_Controller
             $insert_id = $this->db->insert_id();
             $this->load->model('send_mail');
             $this->send_mail->inquiry($insert_id, $id);
+            $this->load->model('send_wp');
+			$this->send_wp->contact($insert_id, $id);
             redirect(base_url('home'), 'refresh');
         }
     }

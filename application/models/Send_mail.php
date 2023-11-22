@@ -186,21 +186,21 @@ class Send_mail extends CI_Model
         }
     }
 
-    public function inquiry($param = '')
+    public function inquiry($id)
     {
-        // $id = $this->security->xss_clean($param);
+        $id = $this->security->xss_clean($id);
 
         $data['password'] = '1234';
         $data['email'] = 'hvkavathiya123@gmail.com';
 
 
-        //   $this->db->select('*');
-        // $this->db->from('contact');
-        // $this->db->where('id',$id);
-        // $data = $this->db->get()->row_array();
+        $this->db->select('*');
+        $this->db->from('inquiry');
+        $this->db->where('id', $id);
+        $inquiry = $this->db->get()->row_array();
 
         if (!empty($data['email'])) {
-            $email_body = 'hello';
+            $email_body = 'hello i am' . " " . $inquiry['name'] . " " . "inquiry for" . " " . $inquiry['inquiry'];
             $mail = $this->phpmailer_lib->load();
             $mail->isSMTP();
             $mail->protocol    = 'smtp';
@@ -213,7 +213,7 @@ class Send_mail extends CI_Model
             $mail->setFrom('support@rkgroupfinance.in');
             $mail->addReplyTo('support@rkgroupfinance.in');
             $mail->addAddress($data['email']);
-            $mail->Subject = "Account-Opened";
+            $mail->Subject = "For Inquiry";
             $mail->isHTML(true);
             $mail->Body = $email_body;
 
