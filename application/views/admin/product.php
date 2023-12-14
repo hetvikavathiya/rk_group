@@ -148,12 +148,10 @@
                     },
                     success: function(response) {
                         if (response != 'success') {
-                            alert('Refresh page data is deleted Successfully.');
+                            location.reload();
                         }
-                    },
-                    error: function() {
-                        alert('Error occurred during the AJAX request.');
                     }
+                  
                 });
             }
         });
